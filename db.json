@@ -1,0 +1,86 @@
+{
+    "composers": [
+        {
+            "id": 1,
+            "name":"Johann Sebastian Bach",
+            "genre" : "classical",
+            "music": [ {
+                "title" : "Bach,JS:Trio Sonata No.1 in E-Flat Major,BWV 525:I",
+                "link" : "https://open.spotify.com/track/5UmAvKLegnOGpBEMj3u4FE?si=9892c7bb7f604f40"
+            },
+            {
+                "title" : "Bach,JS:Trio Sonata No.2 in C minor, BWV 526:||.Largo",
+                "link" : "https://open.spotify.com/track/6RayspPzMLcnOmmgvxcS1w?si=35c213d2275f4310"
+            },
+            {
+                "title" : "Bach,JS:Passacaglia and Fugue in C Minor, BWV 582",
+                "link" : "https://open.spotify.com/track/2ju6eter8x5UIgJEotzi2m?si=3faf34eadaa54c1d"
+            }
+             ]
+        },
+         
+        {
+            "id" : 2,
+            "name" : "Chopin",
+            "genre" : "classical",
+            "music" :[{
+                "title" : "chopin:Wrong note Etude opus 25 no.5",
+                "link" : "https://open.spotify.com/track/3wJXWHRhAPAoWbfaJ5Q0DF?si=4966cfe609f24354"
+            },
+        {
+            "title" : "Ballade no.2 in F major, op 38",
+            "link" : "https://open.spotify.com/track/5R6Xhutodh7bhDGVY71V3O?si=1b81236ac4c448e2"
+            },
+        {
+                "title" : "12 Etudes, Op.10:No.12 in C minor 'revolutionary' ",
+                "link" : "https://open.spotify.com/track/0iYDhwNsh77YOTD59NhnAd?si=babd5e7a2dae4c2a"
+            }
+            ]
+        },
+
+        {
+            "id" : 3,
+            "name" : "George Fredrick Handel",
+            "genre" : "classical",
+            "music" :[{
+                "title" : "Glory of the Lord-- Messiah",
+                "link" : "https://open.spotify.com/track/7255BZcr9iRzqWhxtmk2R7?si=457cee3adc724066"
+
+            },
+        {
+            "title" : "Hallelujah---Messiah",
+            "link" : "https://open.spotify.com/track/01ewh5RynagdvIEwB3wHqT?si=639976f34c2541c1"
+        },
+    {
+        "title" : "oh death where is thy sting?",
+        "link" : "https://open.spotify.com/track/3NKErnZR7SqLYZLWeplsB0?si=48cbfc5ccaf648ee"
+
+    }
+]
+        }
+        
+    
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
