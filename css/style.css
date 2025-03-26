@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 
+	a {
+		text-decoration: none;
+	}
+	
+	li {
+		list-style: none;
+	}
+}
 header{
     background-color: #4682B4;
     height: 5vh;
@@ -38,3 +45,29 @@ h4{
     font-size: 40px;
     /* text-decoration: underline dotted; */
 }
+nav {
+    font-size: 24px;
+    background-color: #F0E68C;
+    
+     border: #F8FAE5;
+     letter-spacing: 1px;
+     padding: 16px;
+     justify-content: space-between 30px;
+     text-align: center;
+     word-spacing: 70px;
+     
+    }
+    a{
+        color: #000;
+        font-weight: 150px;
+        font-size: 30px;
+        font-family: "Emilys Candy", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+    
+    nav a:hover {
+color: #4682B4;
+}
+
+
