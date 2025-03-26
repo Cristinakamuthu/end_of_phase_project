@@ -43,7 +43,7 @@ h4{
     text-align: center;
     padding: 50px;
     font-size: 40px;
-    /* text-decoration: underline dotted; */
+    
 }
 nav {
     font-size: 24px;
@@ -55,6 +55,7 @@ nav {
      justify-content: space-between 30px;
      text-align: center;
      word-spacing: 70px;
+
      
     }
     a{
@@ -64,10 +65,12 @@ nav {
         font-family: "Emilys Candy", serif;
     font-weight: 800;
     font-style: normal;
-  }
+    
+}
     
     nav a:hover {
 color: #4682B4;
+
 }
 
 

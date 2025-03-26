@@ -15,5 +15,22 @@ if (newName !== "") {
 });
 })
 
+function displayDetails(composers) {
+    const classicalMusic = document.getElementById("classicalbar");
+    composers.forEach(composer => {
+        let html = `
+        <img src ="${composer.image}"
+        alt="${composer.name}">
+        <div class="content">
+        <p> ${composer.name} </p>
+        <p> ${composer.genre} </p>
+        </div>
+        `;
+        classicalMusic.innerHTML += html;
+    });
+}
 
-
+fetch(base_url)
+    .then(res => res.json())
+    .then(data => displayDetails(data))
+    .catch(err => console.log(err));
