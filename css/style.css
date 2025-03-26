@@ -3,12 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    background-color: bisque;
-    height: 3vh;
+
+header{
+    background-color: #4682B4;
+    height: 5vh;
     text-align: center;
-    padding: 16px;
+    align-items: center;
+    padding: 10px;
+
+    button{
+        border-radius: 10px;
+        height:3vh ;
+        width: 10vh;
+        background-color: antiquewhite;
+    }
+    input{
+        border-radius: 8px;
+        height:3vh ;
+        width: 30vh;
+        background-color: antiquewhite;
 }
-h4 {
- padding: ;
 }
+
