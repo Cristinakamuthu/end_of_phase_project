@@ -1,6 +1,6 @@
 let base_url = "http://localhost:3000/composers"
 
-document.addEventListener("DOMContentLoaded", () =>{
+document.addEventListener("DOMContentLoaded", () => {
 const title = document.getElementById("title") 
 const input = document.getElementById("input") 
 const btn = document.getElementById("btn")
@@ -17,14 +17,15 @@ if (newName !== "") {
 
 function displayDetails(composers) {
     const classicalMusic = document.getElementById("classicalbar");
-    composers.forEach(composer => {
+      composers.forEach(composer => {
         let html = `
+        <section id="classicaldays" class="classicalmoments">
+        <p> ${composer.name} </p>
         <img src ="${composer.image}"
         alt="${composer.name}">
         <div class="content">
-        <p> ${composer.name} </p>
-        <p> ${composer.genre} </p>
         </div>
+        </section>
         `;
         classicalMusic.innerHTML += html;
     });

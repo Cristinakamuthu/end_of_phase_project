@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -70,6 +71,24 @@ nav {
     
     nav a:hover {
 color: #4682B4;
+
+}
+#classicaldays{
+    height: 100vh;
+    padding-top: 30px;
+    background-color: #4682B4;
+
+
+    img {
+        height: 70vh;
+    }
+    p{
+        font-family: "Bilbo Swash Caps", cursive;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 45px;
+
+    }
 
 }
 
