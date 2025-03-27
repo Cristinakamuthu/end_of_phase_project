@@ -131,7 +131,8 @@ async function addSongsandLink(id, link) {
 
 async function deleteSongTitle(id) {
     try {
-        const response = await fetch(`${base_url}/${id}`, {
+        const response = await 
+        fetch(`${base_url}/${id}`, {
             method: "DELETE",
         });
 
