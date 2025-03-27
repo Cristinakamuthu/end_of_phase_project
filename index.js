@@ -102,7 +102,8 @@ function addNewSongs(songTitle, songLink) {
             }
             return res.json();
         })
-        .then(() => fetch(base_url).then(res => res.json()).then(data => displayDetails(data)))
+        .then(() => fetch(base_url).then(res => res.json())
+        .then(data => displayDetails(data)))
         .catch(err => console.error("Error:", err));
 }
 
