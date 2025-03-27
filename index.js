@@ -48,7 +48,151 @@ function displayDetails(composers) {
     })
 }
 
-// document.addEventListener("DOMContentLoaded",function () {
+fetch(base_url)
+    .then(res => res.json())
+    .then(data => displayDetails(data))
+    .catch(err => console.log(err));
+
+    
+    document.addEventListener("DOMContentLoaded", () => {
+    let form = document.querySelector('.form')
+    form.addEventListener('submit',SubmitSong)
+function SubmitSong(event){
+    event.preventDefault()
+        let song_title = document.getElementById("title").value
+        let song_link = document.getElementById('link').value
+        let song_composer = document.getElementById('name').value
+
+        let song_object = {
+            title: song_title,
+            link : song_link,
+            composer: song_composer
+        }
+
+        postSong(song_object)
+}
+
+    function postSong(song_object){
+        fetch(base_url,{
+            method: "POST",
+            headers : {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(song_object)
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+    }
+    })
+
+    // const deleteButton = document.createElement('button');
+	// 	deleteButton.className = 'delete-button';
+	// 	deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+
+	// 	deleteButton.addEventListener('click', () => deleteTodo(todo.id));
+
+
+        // function renderTodos(todos) {
+        //     tasksList.innerHTML = '';
+        //     todos.forEach((todo) => {
+        //         const todoElement = document.createElement('div');
+        
+        //         todoElement.className = 'task';
+        
+        //         const checkbox = document.createElement('input');
+        //         checkbox.type = 'checkbox';
+        //         checkbox.className = 'checkbox';
+        //         checkbox.checked = todo.completed;
+        
+        //         checkbox.addEventListener('change', () =>
+        //             toggleTodoCompletionStatus(todo.id, todo.completed)
+        //         );
+        
+        //         const todoText = document.createElement('span');
+        //         todoText.textContent = todo.title;
+        
+        //         const deleteButton = document.createElement('button');
+        //         deleteButton.className = 'delete-button';
+        //         deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+        
+        //         deleteButton.addEventListener('click', () => deleteTodo(todo.id));
+        
+        //         if (todo.completed) {
+        //             todoText.style.textDecoration = 'line-through';
+        //             todoElement.style.opacity = '0.3';
+        //         }
+        
+        //         todoElement.appendChild(checkbox);
+        //         todoElement.appendChild(todoText);
+        //         todoElement.appendChild(deleteButton);
+        
+        //         tasksList.appendChild(todoElement);
+        //     });
+        // }
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+        // document.addEventListener("DOMContentLoaded",function () {
 //     const searchBar = document.getElementById("searchBar")
 //     const songList = document.getElementById("songList")
 //     const audioPlayer = document.getElementById("audioPLayer")
@@ -88,8 +232,4 @@ function displayDetails(composers) {
 
 
 
-fetch(base_url)
-    .then(res => res.json())
-    .then(data => displayDetails(data))
-    .catch(err => console.log(err));
 
