@@ -123,7 +123,8 @@ async function addSongsandLink(id, link) {
             throw new Error(`Error: ${response.statusText}`);
         }
 
-        fetch(base_url).then(res => res.json()).then(data => displayDetails(data));
+        fetch(base_url).then(res => res.json())
+        ``.then(data => displayDetails(data));
     } catch (error) {
         alert(error);
     }
