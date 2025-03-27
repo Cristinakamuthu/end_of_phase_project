@@ -104,7 +104,7 @@ function addNewSongs(songTitle, songLink) {
         })
         .then(() => fetch(base_url).then(res => res.json())
         .then(data => displayDetails(data)))
-        .catch(err => console.error("Error:", err));
+        .catch(err => console.log("Error:", err));
 }
 
 async function addSongsandLink(id, link) {
@@ -139,7 +139,8 @@ async function deleteSongTitle(id) {
             throw new Error(`Error: ${response.statusText}`);
         }
 
-        fetch(base_url).then(res => res.json()).then(data => displayDetails(data));
+        fetch(base_url).then(res => res.json())
+        .then(data => displayDetails(data));
     } catch (error) {
         alert(error);
     }
