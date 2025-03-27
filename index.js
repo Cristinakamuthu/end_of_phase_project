@@ -8,7 +8,7 @@ const btn = document.getElementById("btn")
 btn.addEventListener("click", function () {
     let newName = input.value.trim();
 if (newName !== "") {
-        title.textContent = `${newName}'s little musical world!  `;
+        title.textContent = `${newName}'s little musical world!`;
     } else {
         alert("Please enter a name!");
     }
