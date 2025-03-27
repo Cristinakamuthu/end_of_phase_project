@@ -20,15 +20,19 @@ function displayDetails(composers) {
       composers.forEach(composer => {
         let html = `
         <section id="classicaldays" class="classicalmoments">
-        <p> ${composer.name} </p>
+        <section>
+        <p class="name"> ${composer.name} </p>
         <img src ="${composer.image}"
         alt="${composer.name}">
         <div class="content">
         </div>
         </section>
+        <section>
+        <p class="about"> ${composer.about}</p>
+        </section>
+        <section class="search">
         <h2>Search & Play Music</h2>
-
-    <div class="container">
+         <div class="container">
     <label for="input"> 🎵</label>
         <input type="text" id="searchBar" placeholder="Search for a song!...">
         <button id="btn">submit</button>
@@ -38,7 +42,8 @@ function displayDetails(composers) {
     <audio id="audioPlayer" controls>
         <source id="audioSource" src="" type="audio/mp3">
     </audio>
-        `
+    <section>
+     </section>   `
         classicalMusic.innerHTML += html;
     })
 }

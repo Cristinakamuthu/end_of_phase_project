@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
-* {
+* {@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -82,14 +82,47 @@ color: #4682B4;
     img {
         height: 70vh;
     }
-    p{
+    .name{
         font-family: "Bilbo Swash Caps", cursive;
         font-weight: 800;
         font-style: normal;
         font-size: 45px;
 
     }
+    .about{
+        justify-content: center;
+        text-align: center;
+        padding-top: 200px;
+        font-family: "Winky Sans", sans-serif;
+ font-size: 18px;
+  font-weight: 900;
+  
+  
 
+    }
+
+}
+
+.classicalmoments{
+    display: flex;
+    justify-content: space-between;
+    
+
+    .search{
+        justify-content: center;
+        background-image: url(/images/images.jpeg);
+        
+    }
+    h2{
+        color: #F0E68C;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    .container {
+        padding-top: 5px;
+    }
+
+    
 }
 
 
