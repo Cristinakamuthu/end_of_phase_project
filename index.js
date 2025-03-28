@@ -1,4 +1,4 @@
-let base_url = "http://localhost:3000/composers";
+let base_url = "https://end-of-phase-project-server.vercel.app/composers";
 
 document.addEventListener("DOMContentLoaded", () => {
     const title = document.getElementById("title");
