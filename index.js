@@ -65,8 +65,8 @@ function addSongs(composers) {
         songInput.type = "file";
         songInput.className = "file";
 
-        songInput.addEventListener("change", () => {
-            songsPlay(composer.id, songInput.files[0]);
+        songInput.addEventListener("submit", () => {
+            songsPlay(composer.id, songInput.files);
         });
 
         const songName = document.createElement("span");
@@ -85,7 +85,7 @@ function addSongs(composers) {
     });
 }
 
-function addNewSongs(songTitle, songLink) {
+function addNewSongs(songTitle,songLink) {
     fetch(base_url, {
         method: "POST",
         headers: {
@@ -104,7 +104,7 @@ function addNewSongs(songTitle, songLink) {
         })
         .then(() => fetch(base_url).then(res => res.json())
         .then(data => displayDetails(data)))
-        .catch(err => console.log("Error:", err));
+        .catch(err => console.log("Error", err));
 }
 
 async function addSongsandLink(id, link) {
@@ -221,44 +221,4 @@ async function deleteSongTitle(id) {
    
    
    
-        // document.addEventListener("DOMContentLoaded",function () {
-//     const searchBar = document.getElementById("searchBar")
-//     const songList = document.getElementById("songList")
-//     const audioPlayer = document.getElementById("audioPLayer")
-//     const audioSource = document.getElementById ("audioSource")
-
-//     fetch("base_url")
-//                 .then(response => response.json())
-//                 .then(data => {
-//                     let songs = data.composers
-
-//                     function displaySongs(filter = "") {
-//                         songList.innerHTML = ""; 
-//                         songs.filter(song => song.title.toLowerCase().includes(filter.toLowerCase()))
-//                             .forEach(song => {
-//                                 const li = document.createElement("li");
-//                                 li.textContent = composer.music.title;
-//                                 li.dataset.src = composer.music.link;
-//                                 li.onclick = function () {
-//                                     audioSource.src = this.dataset.src;
-//                                     audioPlayer.load();
-//                                     audioPlayer.play();
-//                                 };
-//                                 songList.appendChild(li);
-//                             });
-//                     }
-
-//                      searchBar.addEventListener("", function () {
-//                         displaySongs(searchBar.value);
-//                     });
-
-//                     displaySongs()
-//                 })
-//                 .catch(error => console.error("songs are not able to be fetched:", error));
-//         });
-
-
-
-
-
-
+      
