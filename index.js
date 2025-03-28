@@ -1,6 +1,7 @@
 let base_url = "https://end-of-phase-project-server.vercel.app/composers";
 
 document.addEventListener("DOMContentLoaded", () => {
+    
     const title = document.getElementById("title");
     const input = document.getElementById("input");
     const btn = document.getElementById("btn");
@@ -39,7 +40,7 @@ function displayDetails(composers) {
                     <div id="songsList"></div>
                 </div>
                 <audio id="audioPlayer" controls>
-                    <source id="audioSource" src="" type="audio/mp3">
+                    <source id="audioSource" src="${composer.link}" ="audio/mp3">
                 </audio>
             </section>
         </section>`;
@@ -53,7 +54,8 @@ fetch(base_url)
     .then(data => displayDetails(data))
     .catch(err => console.log(err));
 
-const songsList = document.getElementById("songsList");
+
+    const songsList = document.getElementById("songsList");
 
 function addSongs(composers) {
     songsList.innerHTML = "";
@@ -85,6 +87,12 @@ function addSongs(composers) {
     });
 }
 
+
+
+
+
+
+
 function addNewSongs(songTitle,songLink) {
     fetch(base_url, {
         method: "POST",
@@ -103,7 +111,7 @@ function addNewSongs(songTitle,songLink) {
             return res.json();
         })
         .then(() => fetch(base_url).then(res => res.json())
-        .then(data => displayDetails(data)))
+        .then(data => addSongs(data)))
         .catch(err => console.log("Error", err));
 }
 
@@ -124,7 +132,7 @@ async function addSongsandLink(id, link) {
         }
 
         fetch(base_url).then(res => res.json())
-        ``.then(data => displayDetails(data));
+        .then(data => addSongs(data));
     } catch (error) {
         alert(error);
     }
@@ -142,7 +150,7 @@ async function deleteSongTitle(id) {
         }
 
         fetch(base_url).then(res => res.json())
-        .then(data => displayDetails(data));
+        .then(data => addSongs(data));
     } catch (error) {
         alert(error);
     }

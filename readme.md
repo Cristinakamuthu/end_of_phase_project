@@ -18,7 +18,8 @@ I used ....
 HTML for structuring the webpage
 CSS for styling the user interface
 JavaScript for dynamic functionality
-JSON Server (running on http://localhost:3000/composers) for data storage
+let base_url = "https://end-of-phase-project-server.vercel.app/composers";
+JSON Server (running on ) for data storage
 How to Run the Project
 
 Clone this repository:
